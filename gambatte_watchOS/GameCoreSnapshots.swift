@@ -75,7 +75,7 @@ extension GameplayController {
 		
 		let count = Int(kScreenHeight * kScreenWidth) * MemoryLayout<UInt32>.size
 		let bufferPointer =  UnsafeBufferPointer(start: buffer, count: count)
-		return Data(buffer: bufferPointer)
+        return Data(buffer: bufferPointer)
 	}
 
 	// Use this for debugging. Will output a file to the app's documents directory.
